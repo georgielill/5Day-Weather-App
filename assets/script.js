@@ -5,10 +5,10 @@ let daysForecastDiv = document.querySelector(".days-forecast");
 
 const API_KEY = 'b9314d4276077d1372325ef6164fb926';
 
-let cityName = '';
-let temperature = document.getElementById('temperature');
-let wind = document.getElementById('wind');
-let humidity = document.getElementById('humidity');
+// let cityName = '';
+// let temperature = document.getElementById('temperature');
+// let wind = document.getElementById('wind');
+// let humidity = document.getElementById('humidity');
 
 
 searchButton.addEventListener('click', function (event) {
