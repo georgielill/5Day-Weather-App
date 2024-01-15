@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="assets/reset.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2 weather-header">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <div class="container-fluid my-4 weather-data">
+    <div class="row">
+      <div class="col-xxl-3 col-md-4 px-lg-4">
+        <h5 class="fw-bold">Search for a City:</h5>
+        <input type="text" id="search-input" class="py-2 form-control" placeholder="E.g. New York, London, Tokyo">
+        <button id="search-button" class="btn btn-primary py-2 w-100 mt-3 mb-2">Search</button>
+      </div>
+
+      <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4">
+        <div class="current-weather bg-primary text-white py-2 px-4 rounded-3">
+          <div class="mt-3 d-flex justify-content-between">
+            <div>
+              <h3 class="fw-bold">_______ ( ______ )</h3>
+              <h6 class="my-3 mt-3">Temperature: __°C</h6>
+              <h6 class="my-3">Wind: __ M/S</h6>
+              <h6 class="my-3">Humidity: __%</h6>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="fw-bold my-4">5-Day Forecast</h4>
+        <div class="days-forecast row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-between">
+          <div class="col mb-3">
+            <div class="card border-0 bg-secondary text-white">
+              <div class="card-body p-3 text-white">
+                <h5 class="card-title fw-semibold">( ______ )</h5>
+                <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                <h6 class="card-text my-3">Wind: __ M/S</h6>
+                <h6 class="card-text my-3">Humidity: __%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card border-0 bg-secondary text-white">
+              <div class="card-body p-3 text-white">
+                <h5 class="card-title fw-semibold">( ______ )</h5>
+                <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                <h6 class="card-text my-3">Wind: __ M/S</h6>
+                <h6 class="card-text my-3">Humidity: __%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card border-0 bg-secondary text-white">
+              <div class="card-body p-3 text-white">
+                <h5 class="card-title fw-semibold">( ______ )</h5>
+                <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                <h6 class="card-text my-3">Wind: __ M/S</h6>
+                <h6 class="card-text my-3">Humidity: __%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card border-0 bg-secondary text-white">
+              <div class="card-body p-3 text-white">
+                <h5 class="card-title fw-semibold">( ______ )</h5>
+                <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                <h6 class="card-text my-3">Wind: __ M/S</h6>
+                <h6 class="card-text my-3">Humidity: __%</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col mb-3">
+            <div class="card border-0 bg-secondary text-white">
+              <div class="card-body p-3 text-white">
+                <h5 class="card-title fw-semibold">( ______ )</h5>
+                <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+                <h6 class="card-text my-3">Wind: __ M/S</h6>
+                <h6 class="card-text my-3">Humidity: __%</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <div class="weather-data">
+  <div class="current-weather">
+    <div class="details">
+      <h2>London (2024-01-14)</h2>
+      <h4>Temperature: 19.10°C</h4>
+      <h4>Wind: 4.31 M/S</h4>
+      <h4>Humidity: 79%</h4>
+    </div>
+    <div class="icon">
+      <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+      <h4>Moderate Rain</h4>
+    </div>
+  </div>
+</div>
+</html> -->
+
+
+
+
+<!--  max-width for ultra wide resolutions
+  <div class="container-fluid" style="max-width: 1400px">
+    <div class="row">
+      <aside class="col-lg-3 pb-3">
+        <h2 id="form-heading" class="mt-1 h3 form-label">
+          Search for a City:
+        </h2>
+        <form id="search-form" class="form">
+          <div class="form-inline form-group">
+            <div class="input-group">
+              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
+                aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div class="input-group-append">
+                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
+                  Search
+                </button>
+                <hr class="hr weather-hr" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="list-group" id="history">
+          <ul></ul>
+          <ul></ul>
+          <ul></ul>
+          <ul></ul>
+        </div>
+      </aside>
+
+      <div class="card">
+        <div class="card-body" id="today">
+          This is some text within a card body.
+        </div>
+      </div>
+
+      <div class="col-lg-9 pb-3">
+        <section id="today" class="mt-3" role="region" aria-live="polite"></section>
+        <!-- today -->
+<!-- <section id="forecast" class="row mt-3" role="region" aria-live="polite">
+  <h1>City</h1>
+  <br>
+  <p id="temperature">Temperature:</p>
+  <br>
+  <p id="wind">Wind:</p>
+  <br>
+  <p id="humidity">Humidity:</p>
+</section>
+</div>
+5 day forecast -->
+<!-- <div class="col-lg-9 pb-3">
+  <section id="5-day" class="mt-3" role="region" aria-live="polite"></section>
+  <section id="forecast" class="row mt-3" role="region" aria-live="polite">
+    <div class="container text-center">
+      <div class="row row-col-6">
+      </div>
+    </div>
+  </section>
+</div>
+
+</div> -->
